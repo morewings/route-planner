@@ -1,3 +1,4 @@
+/*eslint-disable*/
 const reorderList = (startIndex, endIndex, list) => {
   const result = [...list];
   const [removed] = result.splice(startIndex, 1);

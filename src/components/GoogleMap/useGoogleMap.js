@@ -3,7 +3,7 @@ import loadGoogleMaps from 'load-google-maps-api';
 
 const useGoogleMap = onSuccess => {
   useEffect(() => {
-    let isSubscribed = true;
+    let isSubscribed = true; // eslint-disable-line fp/no-let
     loadGoogleMaps({
       key: process.env.REACT_APP_GOOGLE_API_KEY,
     })
