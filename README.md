@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/morewings/route-planner.svg?branch=master)](https://travis-ci.org/morewings/route-planner)
-[![Dependencies](https://david-dm.org//morewings/route-planner.svg)](https://david-dm.org//morewings/route-planner)
+[![Dependencies](https://david-dm.org/morewings/route-planner.svg)](https://david-dm.org/morewings/route-planner)
 
 My custom tailored React App template. Based on [create-react-app](https://github.com/facebookincubator/create-react-app) with some additions.
 
