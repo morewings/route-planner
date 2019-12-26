@@ -40,6 +40,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "yarn lint && react-scripts test --env=jsdom",
+    "test-travis": "CI=true yarn lint && react-scripts test --env=jsdom",
+    "test:coverage": "yarn test-travis -- --coverage",
     "eject": "react-scripts eject",
     "fix": "eslint --fix ./src/",
     "lint": "eslint ./src/"
