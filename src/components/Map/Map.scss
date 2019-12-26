@@ -1,0 +1,13 @@
+@import "./../../variables";
+
+.map{
+  background: $mapBackground;
+  width: calc(100% - #{$sidebarWidth});
+  position: relative;
+}
+
+.map-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
