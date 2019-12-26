@@ -1,0 +1,32 @@
+.waypoint{
+  display: flex;
+  align-items: center;
+  &:hover{
+    .waypoint-dragHandle{
+      .waypoint-icon{
+        opacity: 1;
+      }
+    }
+  }
+  .waypoint-dragHandle{
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+  }
+  .waypoint-icon{
+    display: inline-block;
+    opacity: .3;
+    img{
+      filter: invert(1); // change icon color to white
+    }
+  }
+  .waypoint-actions{
+    margin-left: auto;
+    .waypoint-icon{
+      cursor: pointer;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+}

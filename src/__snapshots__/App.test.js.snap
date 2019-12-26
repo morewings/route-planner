@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <App>
+    <div
+      className="App"
+    >
+      <Dashboard>
+        <div
+          className="Dashboard"
+        >
+          Dashboard
+        </div>
+      </Dashboard>
+      <Wrapper>
+        <DefaultLoadingContainer>
+          <div>
+            Loading...
+          </div>
+        </DefaultLoadingContainer>
+      </Wrapper>
+      hello
+    </div>
+  </App>
+</Provider>
+`;
