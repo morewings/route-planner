@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <App>
+    <div
+      className="App"
+    >
+      <Dashboard>
+        <div
+          className="dashboard"
+        >
+          <h3>
+            Route Builder
+          </h3>
+          <div
+            className="routecontrol-wrapper"
+          >
+            <RouteControl>
+              <div
+                className="route-control"
+              >
+                <DraggableList
+                  items={Array []}
+                  listItem={[Function]}
+                  onReorder={[Function]}
+                >
+                  <DragDropContext
+                    onDragEnd={[Function]}
+                  >
+                    <ErrorBoundary>
+                      <App
+                        contextId="0"
+                        liftInstruction="Draggable item. Ensure your screen reader is not in browse mode and then press space bar to lift."
+                        onDragEnd={[Function]}
+                        setCallbacks={[Function]}
+                      >
+                        <Provider
+                          context={
+                            Object {
+                              "$$typeof": Symbol(react.context),
+                              "Consumer": Object {
+                                "$$typeof": Symbol(react.context),
+                                "_calculateChangedBits": null,
+                                "_context": [Circular],
+                              },
+                              "Provider": Object {
+                                "$$typeof": Symbol(react.provider),
+                                "_context": [Circular],
+                              },
+                              "_calculateChangedBits": null,
+                              "_currentRenderer": Object {},
+                              "_currentRenderer2": null,
+                              "_currentValue": null,
+                              "_currentValue2": null,
+                              "_threadCount": 0,
+                            }
+                          }
+                          store={
+                            Object {
+                              "dispatch": [Function],
+                              "getState": [Function],
+                              "replaceReducer": [Function],
+                              "subscribe": [Function],
+                              Symbol(observable): [Function],
+                            }
+                          }
+                        >
+                          <ConnectFunction
+                            direction="vertical"
+                            droppableId="droppable"
+                            getContainerForClone={[Function]}
+                            ignoreContainerClipping={false}
+                            isCombineEnabled={false}
+                            isDropDisabled={false}
+                            mode="standard"
+                            renderClone={null}
+                            type="DEFAULT"
+                          >
+                            <Droppable
+                              direction="vertical"
+                              droppableId="droppable"
+                              getContainerForClone={[Function]}
+                              ignoreContainerClipping={false}
+                              isCombineEnabled={false}
+                              isDropDisabled={false}
+                              mode="standard"
+                              placeholder={null}
+                              renderClone={null}
+                              shouldAnimatePlaceholder={false}
+                              snapshot={
+                                Object {
+                                  "draggingFromThisWith": null,
+                                  "draggingOverWith": null,
+                                  "isDraggingOver": false,
+                                  "isUsingPlaceholder": false,
+                                }
+                              }
+                              type="DEFAULT"
+                              updateViewportMaxScroll={[Function]}
+                              useClone={null}
+                            >
+                              <div
+                                data-rbd-droppable-context-id="0"
+                                data-rbd-droppable-id="droppable"
+                                style={
+                                  Object {
+                                    "boxSizing": "border-box",
+                                    "padding": 8,
+                                    "width": "100%",
+                                  }
+                                }
+                              >
+                                <AnimateInOut
+                                  on={null}
+                                  shouldAnimate={false}
+                                />
+                              </div>
+                            </Droppable>
+                          </ConnectFunction>
+                        </Provider>
+                      </App>
+                    </ErrorBoundary>
+                  </DragDropContext>
+                </DraggableList>
+              </div>
+            </RouteControl>
+          </div>
+          <div
+            className="download-wrapper"
+          >
+            <Download>
+              <div>
+                <button
+                  className="download-button"
+                  disabled={true}
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Download your Route
+                </button>
+              </div>
+            </Download>
+          </div>
+        </div>
+      </Dashboard>
+      <Map>
+        <div
+          className="map"
+        >
+          <MapContainer
+            center={
+              Object {
+                "lat": 37.234332396,
+                "lng": -115.80666344,
+              }
+            }
+            className="map-container"
+            onClick={[Function]}
+            polyLineOptions={
+              Object {
+                "strokeColor": "#000000",
+                "strokeOpacity": 1,
+                "strokeWeight": 3,
+              }
+            }
+            zoom={9}
+          >
+            <div>
+              Loading...
+            </div>
+          </MapContainer>
+        </div>
+      </Map>
+    </div>
+  </App>
+</Provider>
+`;
