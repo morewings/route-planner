@@ -9,8 +9,6 @@ const Route = () => {
     <Fragment>
       {coordinates.map((coordinate, i) => (
         <Marker
-          titleColor="white"
-          title={`${i + 1}`}
           labelOptions={{
             color: 'white',
             label: `${i + 1}`,
