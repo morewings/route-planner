@@ -1,19 +1,18 @@
-import React, {Fragment, useRef, useContext, useEffect} from 'react';
+import React, {Fragment, useContext, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import MapContext from './MapContext';
 
 const PolyLine = ({polylineOptions, coordinates}) => {
   const {googleAPI, mapInstance} = useContext(MapContext);
-  const polyLine = useRef();
   useEffect(() => {
-    polyLine.current = new googleAPI.Polyline(polylineOptions);
-    polyLine.current.setMap(mapInstance);
-    const path = polyLine.current.getPath();
+    const Polyline = new googleAPI.Polyline(polylineOptions);
+    Polyline.setMap(mapInstance);
+    const path = Polyline.getPath();
     coordinates.forEach(coordinate => {
       path.push(coordinate); // eslint-disable-line fp/no-mutating-methods
     });
     return () => {
-      polyLine.current.setMap(null);
+      Polyline.setMap(null);
     };
   }, [googleAPI, mapInstance, coordinates, polylineOptions]);
 
