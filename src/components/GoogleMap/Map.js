@@ -16,7 +16,11 @@ const MapContainer = ({center, zoom, onClick, children, className}) => {
       setIsLoading(false);
       contextStorage.current = {
         googleAPI,
-        mapInstance: new googleAPI.Map(mapNode.current, {zoom, center}),
+        mapInstance: new googleAPI.Map(mapNode.current, {
+          zoom,
+          center,
+          mapTypeId: 'terrain',
+        }),
       };
       contextStorage.current.mapInstance.addListener('click', handleClick);
       setIsMapReady(true);

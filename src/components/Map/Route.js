@@ -7,15 +7,20 @@ const Route = () => {
   const coordinates = useSelector(state => state.route.coordinates);
   return (
     <Fragment>
-      {coordinates.map(coordinate => (
-        <Marker position={coordinate} key={coordinate.id} />
+      {coordinates.map((coordinate, i) => (
+        <Marker
+          titleColor="white"
+          title={`${i + 1}`}
+          position={coordinate}
+          key={coordinate.id}
+        />
       ))}
       <PolyLine
         coordinates={parseCoordinates(coordinates)}
         polylineOptions={{
-          strokeColor: '#000000',
+          strokeColor: '#1086E7',
           strokeOpacity: 1.0,
-          strokeWeight: 3,
+          strokeWeight: 5,
         }}
       />
     </Fragment>
