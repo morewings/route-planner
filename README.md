@@ -1,13 +1,11 @@
 [![Build Status](https://travis-ci.org/morewings/route-planner.svg?branch=master)](https://travis-ci.org/morewings/route-planner)
 [![Dependencies](https://david-dm.org/morewings/route-planner.svg)](https://david-dm.org/morewings/route-planner)
 
-My custom tailored React App template. Based on [create-react-app](https://github.com/facebookincubator/create-react-app) with some additions.
-
 ## Quickstart
 
 ### Prerequisites
 - Install [nvm](https://github.com/creationix/nvm);
-- Install latest LTS node release with `nvm install 8`;
+- Install latest stable node release with `nvm install 10`;
 - Install [yarn](https://yarnpkg.com/en/) globally `brew install yarn`
 
 ### Initial setup
