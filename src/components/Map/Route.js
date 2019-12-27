@@ -24,14 +24,16 @@ const Route = () => {
           }}
         />
       ))}
-      <PolyLine
-        coordinates={parseCoordinates(coordinates)}
-        polylineOptions={{
-          strokeColor: '#1086E7',
-          strokeOpacity: 1.0,
-          strokeWeight: 5,
-        }}
-      />
+      {coordinates.length > 1 && (
+        <PolyLine
+          coordinates={parseCoordinates(coordinates)}
+          polylineOptions={{
+            strokeColor: '#1086E7',
+            strokeOpacity: 1.0,
+            strokeWeight: 5,
+          }}
+        />
+      )}
     </Fragment>
   );
 };
