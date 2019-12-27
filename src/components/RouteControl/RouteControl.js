@@ -1,8 +1,8 @@
 import React, {useCallback} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {REORDER_COORDINATES, DELETE_COORDINATES} from 'Redux/constants';
-import DraggableList from 'components/DraggableList';
-import Waypoint from 'components/Waypoint';
+import {REORDER_COORDINATES, DELETE_COORDINATES} from '../../Redux/constants';
+import DraggableList from '../DraggableList';
+import Waypoint from '../Waypoint';
 import './RouteControl.scss';
 
 const RouteControl = () => {

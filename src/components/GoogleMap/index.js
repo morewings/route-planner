@@ -1,3 +1,3 @@
-export {default as GoogleMap} from 'components/GoogleMap/Map';
-export {default as Marker} from 'components/GoogleMap/Marker';
-export {default as PolyLine} from 'components/GoogleMap/PolyLine';
+export {default as GoogleMap} from './Map';
+export {default as Marker} from './Marker';
+export {default as PolyLine} from './PolyLine';

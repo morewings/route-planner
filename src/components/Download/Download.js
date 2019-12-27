@@ -1,8 +1,8 @@
 import React from 'react';
 import {useSelector} from 'react-redux';
 import {saveAs} from 'file-saver';
-import createBLOB from 'utils/createBLOB';
-import renderGPX from 'components/GPX';
+import createBLOB from '../../utils/createBLOB';
+import renderGPX from '../GPX';
 import './Download.scss';
 
 const Download = () => {

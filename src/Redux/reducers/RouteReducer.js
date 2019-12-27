@@ -2,9 +2,9 @@ import {
   ADD_COORDINATES,
   REORDER_COORDINATES,
   DELETE_COORDINATES,
-} from 'Redux/constants';
-import reorderList from 'utils/reorderList';
-import deleteItemFromList from 'utils/deleteItemFromList';
+} from '../constants';
+import reorderList from '../../utils/reorderList';
+import deleteItemFromList from '../../utils/deleteItemFromList';
 
 const initialState = {
   coordinates: [],

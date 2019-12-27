@@ -1,9 +1,9 @@
 import React, {useCallback} from 'react';
 import {useDispatch} from 'react-redux';
-import {ADD_COORDINATES} from 'Redux/constants';
-import {serializeCoordinates} from 'utils/coordinates';
-import {GoogleMap} from 'components/GoogleMap';
-import Route from 'components/Map/Route';
+import {ADD_COORDINATES} from '../../Redux/constants';
+import {serializeCoordinates} from '../../utils/coordinates';
+import {GoogleMap} from '../GoogleMap';
+import Route from './Route';
 import './Map.scss';
 
 const area51 = {

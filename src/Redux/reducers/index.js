@@ -1,5 +1,5 @@
 import {combineReducers} from 'redux';
-import RouteReducer from 'Redux/reducers/RouteReducer';
+import RouteReducer from './RouteReducer';
 
 const rootReducer = combineReducers({
   route: RouteReducer,

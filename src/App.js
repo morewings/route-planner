@@ -1,8 +1,8 @@
 import React from 'react';
-import Map from 'components/Map';
-import Dashboard from 'components/Dashboard';
+import Map from './components/Map';
+import Dashboard from './components/Dashboard';
 
-const App = props => (
+const App = () => (
   <div className="App">
     <Dashboard />
     <Map />

@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import {useSelector} from 'react-redux';
-import {parseCoordinates} from 'utils/coordinates';
-import {PolyLine, Marker} from 'components/GoogleMap';
+import {parseCoordinates} from '../../utils/coordinates';
+import {PolyLine, Marker} from '../GoogleMap';
 
 const Route = () => {
   const coordinates = useSelector(state => state.route.coordinates);
