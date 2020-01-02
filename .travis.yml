@@ -14,7 +14,7 @@ deploy:
   local_dir: build
 
 script:
-  - yarn test-travis
+  - yarn test
   - yarn build
 
 notifications:

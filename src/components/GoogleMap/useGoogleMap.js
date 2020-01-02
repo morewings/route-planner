@@ -3,7 +3,7 @@ import loadGoogleMaps from 'load-google-maps-api';
 
 const useGoogleMap = onSuccess => {
   useEffect(() => {
-    let isSubscribed = true; // eslint-disable-line fp/no-let
+    let isSubscribed = true;
     loadGoogleMaps({
       key: process.env.REACT_APP_GOOGLE_API_KEY,
     })
@@ -14,7 +14,7 @@ const useGoogleMap = onSuccess => {
         isSubscribed && console.error(error); // eslint-disable-line no-console
       });
     return () => {
-      isSubscribed = false;
+      isSubscribed = false; // eslint-disable-line fp/no-mutation
     };
   }, [onSuccess]);
 };

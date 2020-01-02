@@ -28,28 +28,28 @@ const DraggableList = ({items, onReorder, listItem}) => {
   return (
     <DragDropContext onDragEnd={onDragEnd}>
       <Droppable droppableId="droppable">
-        {(provided, snapshot) => (
+        {(providedDrop, snapshotDrop) => (
           <div
-            {...provided.droppableProps}
-            ref={provided.innerRef}
-            style={getListStyle(snapshot.isDraggingOver)}>
+            {...providedDrop.droppableProps}
+            ref={providedDrop.innerRef}
+            style={getListStyle(snapshotDrop.isDraggingOver)}>
             {items.map((item, index) => (
               <Draggable key={item.id} draggableId={item.id} index={index}>
-                {(provided, snapshot) => (
+                {(providedDrag, snapshotDrag) => (
                   <div
-                    ref={provided.innerRef}
-                    {...provided.draggableProps}
-                    {...provided.dragHandleProps}
+                    ref={providedDrag.innerRef}
+                    {...providedDrag.draggableProps}
+                    {...providedDrag.dragHandleProps}
                     style={getItemStyle(
-                      snapshot.isDragging,
-                      provided.draggableProps.style
+                      snapshotDrag.isDragging,
+                      providedDrag.draggableProps.style
                     )}>
                     <ListItem index={index} item={item} />
                   </div>
                 )}
               </Draggable>
             ))}
-            {provided.placeholder}
+            {providedDrop.placeholder}
           </div>
         )}
       </Droppable>

@@ -14,6 +14,7 @@ const MapContainer = ({center, zoom, onClick, children, className}) => {
         onClick(e.latLng);
       };
       setIsLoading(false);
+      // eslint-disable-next-line fp/no-mutation
       contextStorage.current = {
         googleAPI,
         mapInstance: new googleAPI.Map(mapNode.current, {

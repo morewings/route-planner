@@ -6,7 +6,7 @@ import MapContext from './MapContext';
 const Marker = ({position, iconStyle, labelOptions}) => {
   const {googleAPI, mapInstance} = useContext(MapContext);
   useEffect(() => {
-    const Marker = new googleAPI.Marker({
+    const GoogleMarker = new googleAPI.Marker({
       position,
       title: labelOptions.title,
       map: mapInstance,
@@ -17,7 +17,7 @@ const Marker = ({position, iconStyle, labelOptions}) => {
       },
     });
     return () => {
-      Marker.setMap(null);
+      GoogleMarker.setMap(null);
     };
   }, [
     googleAPI,
