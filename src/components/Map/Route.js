@@ -1,10 +1,11 @@
 import React, {Fragment} from 'react';
 import {useSelector} from 'react-redux';
+import {selectors} from '../../Redux/route';
 import {parseCoordinates} from '../../utils/coordinates';
 import {PolyLine, Marker} from '../GoogleMap';
 
 const Route = () => {
-  const coordinates = useSelector(state => state.route.coordinates);
+  const coordinates = useSelector(selectors.getRouteCoordinates);
   return (
     <Fragment>
       {coordinates.map((coordinate, i) => (

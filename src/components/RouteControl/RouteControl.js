@@ -1,17 +1,17 @@
 import React, {useCallback} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {REORDER_COORDINATES, DELETE_COORDINATES} from '../../Redux/constants';
+import {actionTypes, selectors} from '../../Redux/route';
 import DraggableList from '../DraggableList';
 import Waypoint from '../Waypoint';
 import './RouteControl.scss';
 
 const RouteControl = () => {
-  const coordinates = useSelector(state => state.route.coordinates);
+  const coordinates = useSelector(selectors.getRouteCoordinates);
   const dispatch = useDispatch();
   const handleReorder = useCallback(
     (source, destination) => {
       dispatch({
-        type: REORDER_COORDINATES,
+        type: actionTypes.REORDER_COORDINATES,
         payload: {source, destination},
       });
     },
@@ -20,7 +20,7 @@ const RouteControl = () => {
   const handleDelete = useCallback(
     id => {
       dispatch({
-        type: DELETE_COORDINATES,
+        type: actionTypes.DELETE_COORDINATES,
         payload: id,
       });
     },

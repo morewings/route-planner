@@ -1,6 +1,6 @@
 import React, {useCallback} from 'react';
 import {useDispatch} from 'react-redux';
-import {ADD_COORDINATES} from '../../Redux/constants';
+import {actionTypes} from '../../Redux/route';
 import {serializeCoordinates} from '../../utils/coordinates';
 import {GoogleMap} from '../GoogleMap';
 import Route from './Route';
@@ -16,7 +16,7 @@ const Map = () => {
   const handleClick = useCallback(
     coordinates =>
       dispatch({
-        type: ADD_COORDINATES,
+        type: actionTypes.ADD_COORDINATES,
         payload: serializeCoordinates(coordinates),
       }),
     [dispatch]

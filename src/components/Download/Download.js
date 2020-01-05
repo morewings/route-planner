@@ -1,12 +1,13 @@
 import React from 'react';
 import {useSelector} from 'react-redux';
 import {saveAs} from 'file-saver';
+import {selectors} from '../../Redux/route';
 import createBLOB from '../../utils/createBLOB';
 import renderGPX from '../GPX';
 import './Download.scss';
 
 const Download = () => {
-  const coordinates = useSelector(state => state.route.coordinates);
+  const coordinates = useSelector(selectors.getRouteCoordinates);
   const hasRoute = coordinates.length !== 0;
   const handleClick = () => {
     if (hasRoute) {

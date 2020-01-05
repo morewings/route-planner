@@ -1,12 +1,16 @@
-import {applyMiddleware, compose, createStore} from 'redux';
+import {combineReducers, createStore} from 'redux';
 import ReduxThunk from 'redux-thunk';
-import rootReducer from './Redux/reducers';
+import {RouteReducer} from './Redux/route';
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose; // eslint-disable-line
+const rootReducer = combineReducers({
+  route: RouteReducer,
+});
 
-const store = createStore(
-  rootReducer,
-  composeEnhancers(applyMiddleware(ReduxThunk))
-);
+/* eslint-disable no-underscore-dangle */
+const reduxDevtoolsEnhancer =
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
+/* eslint-enable */
+
+const store = createStore(rootReducer, reduxDevtoolsEnhancer);
 
 export default store;

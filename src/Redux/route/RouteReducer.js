@@ -2,7 +2,7 @@ import {
   ADD_COORDINATES,
   REORDER_COORDINATES,
   DELETE_COORDINATES,
-} from '../constants';
+} from './actionTypes';
 import reorderList from '../../utils/reorderList';
 import deleteItemFromList from '../../utils/deleteItemFromList';
 
