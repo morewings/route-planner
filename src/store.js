@@ -1,5 +1,4 @@
 import {combineReducers, createStore} from 'redux';
-import ReduxThunk from 'redux-thunk';
 import {RouteReducer} from './Redux/route';
 
 const rootReducer = combineReducers({
