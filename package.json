@@ -7,7 +7,7 @@
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.2",
     "enzyme-to-json": "3.4.4",
-    "file-saver": "2.0.2",
+    "file-saver": "2.0.5",
     "load-google-maps-api": "2.0.2",
     "lodash": "4.17.19",
     "node-sass": "4.13.1",
