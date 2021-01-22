@@ -5,7 +5,7 @@
   "homepage": "https://morewings.github.io/route-planner/",
   "dependencies": {
     "enzyme": "3.11.0",
-    "enzyme-adapter-react-16": "1.15.2",
+    "enzyme-adapter-react-16": "1.15.6",
     "enzyme-to-json": "3.4.4",
     "file-saver": "2.0.2",
     "load-google-maps-api": "2.0.2",
